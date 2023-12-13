@@ -1,0 +1,40 @@
+table,thead,th,tr,td{
+    border: 2px solid #03A696;
+    border-collapse: collapse;
+    padding: 10px;
+
+}
+
+th,td{
+    text-transform: capitalize;
+}
+table{
+    width: 600px;
+    text-align: center;
+}
+thead{
+    height: 50px;
+    background-color: #005C53;
+    color:white;
+}
+td{
+    background-color: #042940;
+    color:#fff;
+}
+
+thead:hover{
+    background-color: #042940;
+}
+
+td:hover{
+    background-color: #005C53;
+}
+
+th{
+    border: 2px solid #005C53;
+}
+
+div{
+    width: 450px;
+    overflow:scroll;
+}
