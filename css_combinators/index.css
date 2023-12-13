@@ -1,0 +1,13 @@
+.only-child >p{
+    color:red;
+
+}
+
+
+.to-next-child ~ p{
+    color:red;
+}
+
+.to-next-child + p{
+    color:aqua;
+}
