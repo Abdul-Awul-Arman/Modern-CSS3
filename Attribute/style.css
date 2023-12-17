@@ -1,0 +1,7 @@
+/* p[title]{
+    background-color: red;
+} */
+
+p[title~='arm']{
+    background-color: red;
+}

@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+
+
 html,body{
   height: 100%;
   width: 100%;
@@ -11,31 +14,35 @@ html,body{
 }
 
 img{
-    height: 337px;
-    width: 298px;
+    height: 58vh;
+    width: 47vw;
     margin: auto;
     display: flex;
     position: absolute;
     z-index: -2;
     transition:all .3s ease-in-out;
+    max-width: 350px;
+    max-height: 350px;
 
 }
 
 .main{
-    height: 337px;
-    width: 300px;
+    height: 58vh;
+    width: 47vw;
     margin: auto;
     overflow: hidden;
     border: 2px solid #091326;
     position: relative;
+    max-width: 350px;
+    max-height: 350px;
 }
 
 
 .card{
     text-align: center;
     color:white;
-    height: 337px;
-    width: 300px;
+    height: 58vh;
+    width: 47vw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -47,12 +54,17 @@ img{
     position: relative;
     top:-500px;
     transition:all .3s ease-out;
+    padding: 0px 1vw;
+    max-width: 350px;
+    font-size: 1rem;
+    max-height: 350px;
 }
 
 .card h3{
     font-family: 'Courier New', Courier, monospace;
-    font-size:30px;
+    font-size:2em;
     margin:16px 0;
+
 }
 
 .card a{
@@ -65,7 +77,12 @@ img{
     width: 100px;
     padding: 10px 0;
     margin-top:25px;
+    font-size: 1em;
     
+}
+
+p{
+    font-size: 1em;
 }
 
 .main:hover img{
@@ -74,4 +91,43 @@ img{
 .main:hover .card{
     display: flex;
     top:0px;
+}
+
+@media screen and (max-width:1024px) {
+    
+    .main{
+        height: 40vh;
+        width: 70vw;
+    }
+    .card{
+        height: 40vh;
+        width: 70vw;
+    }
+
+    img{
+        height: 40vh;
+        width: 70vw;
+    }
+
+    .card h3{
+        
+        font-size:1.8rem;
+    }
+    
+}
+
+@media  screen and (max-width:280px) {
+
+    .card h3{
+        
+        font-size:1.3em;
+    }
+
+    .card a{
+        font-size: 1em;
+    }
+    p{
+        font-size: 1em;
+    }
+    
 }
