@@ -2,6 +2,15 @@
     background-color: red;
 } */
 
-p[title~='arm']{
+/* p[title~='arm']{
     background-color: red;
+} */
+div{
+    margin:30px;
+}
+
+div[class*='a']{
+    background-color: red;
+    width: 300px;
+    height:300px;
 }
