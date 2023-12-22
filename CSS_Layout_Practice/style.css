@@ -41,3 +41,46 @@ nav ul li{
 nav{
     border-bottom: 2px solid #ddd;
 }
+
+/* main content  */
+section{
+    width: 1140px;
+    margin: 30px auto;
+    border-bottom: 2px solid #ddd;
+    overflow: hidden;
+}
+
+.main-content{
+    width:70%;
+    border-right: 2px solid #ddd;
+    float:left;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.child-content{
+    width: 30%;
+    height: 600px;
+    padding: 10px 1%;
+    float: left;
+    margin-right: 5px;
+
+}
+
+.main-side-content img {
+    
+    width:200px;
+}
+
+aside{
+    width:28%;
+    float: left;
+}
+
+.child-content a img{
+   width:300px;
+   max-width: 100%;
+   display: none;
+}
+
+
