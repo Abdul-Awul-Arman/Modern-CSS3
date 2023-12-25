@@ -32,25 +32,21 @@ body{
     font-size: 28px;
     padding-left: 30px;
     font-weight: 300;
-
 }
 
 .first-section_logo{
-    width:350px;
+    width:330px;
 }
 
 .second-section form{
     background-color: #ffffff;
-    width: 396px;
-    height: 348px;
+    width: 400px;
+    height: 340px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
     text-align: center;
     margin-left: 80px;
-    display: flex;
-    flex-direction:column ;
-    justify-content: space-evenly;
-    align-items: center;
     border-radius: 8px;
+    padding: 5px 0px;
     
 }
 
@@ -66,17 +62,17 @@ body{
    height: 51px;
    width: 370px;
    font-size:17px;
-   display: flex;
-   flex-direction:column ;
-   justify-content: space-evenly;
    outline: none;
    border-style: solid;
    border: 1px solid #dddfe2;
    border-radius: 8px;
    color: #1d212979;
+   margin: auto ;
+ 
 }
 
 .second-section p{
+    font-size: 14px;
     margin-top: 40px;
     margin-left: 80px;
     color: #1c1e21;
@@ -92,5 +88,60 @@ body{
     color:#ffffff;
     font-size: 20px;
     font-weight: bold;
-    text-indent: 150px;
+}
+
+form a{
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #1877f2;
+    font-size: 14px;
+    padding-bottom:20px;
+    border-bottom: 1px solid #dddd;
+    width: 350px;
+    text-decoration: none;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+form hr{
+    width: 300px;
+}
+
+.second-section input,.second-section button[value='Log in']{
+    margin-top: 12px;
+}
+
+footer{
+    background-color: #ffffff;
+    text-align: center;
+    color: #737373;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 12px;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+form input:nth-child(2):focus-visible,input:nth-child(1):focus-visible{
+
+    border-color: #1b74e4;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+input[value='Create new account']{
+    background-color: #42b72a;
+    color:#ffffff;
+    font-weight: bold;
+    width: 190px;
+    height: 50px;
+    margin-top:14px ;
+
 }
