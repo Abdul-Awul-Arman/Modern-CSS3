@@ -13,16 +13,20 @@ html,body{
 body{
     background-color: #f0f2f5;
 }
-.main-div{
-    width:80vw;
-    height: 120vh;
-    margin: auto;
-    padding: 30px 0px;
+
+main{
     display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.main-div{
+    margin: auto;
+    padding: 5px 0px;
+    display: flex;
+    padding-bottom: 85px;
 }
 
 .first-section{
-    width: 52%;
     padding-left: 10px;
     margin-top: 150px;
     /* background-color: red; */
@@ -41,7 +45,7 @@ body{
 .second-section form{
     background-color: #ffffff;
     width: 400px;
-    height: 340px;
+    height: 348px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
     text-align: center;
     margin-left: 80px;
@@ -54,7 +58,6 @@ body{
     /* background-color: red; */
     margin-top: 100px;
     text-align: center;
-
 }
 
 .second-section input,button {
@@ -114,15 +117,27 @@ form hr{
     margin-top: 12px;
 }
 
+.second-section button[value='Log in']{
+    cursor: pointer;
+}
+
 footer{
+    height: 70px;
     background-color: #ffffff;
     text-align: center;
     color: #737373;
+    
 }
 
-footer ul li{
+footer ul li {
     display: inline-block;
     margin: 10px;
+   
+}
+
+footer ul li a{
+    color: #737373;
+    text-decoration: none;
     font-size: 12px;
 }
 
@@ -140,8 +155,30 @@ input[value='Create new account']{
     background-color: #42b72a;
     color:#ffffff;
     font-weight: bold;
-    width: 190px;
+    width: 195px;
     height: 50px;
     margin-top:14px ;
-
+    cursor: pointer;
 }
+input[value='Create new account']:hover{
+   background-color: #36a420;
+}
+
+.second-section button[value='Log in']:active{
+    border: 3px solid #329ad2a9;
+ }
+
+ .second-section p b a{
+    text-decoration: none;
+    color: black;
+ }
+ .second-section p b a:hover{
+    text-decoration: underline;
+ }
+ .second-section p {
+    margin-top: 30px;
+ }
+
+ .firest-section_text{
+    width: 500px;
+ }
